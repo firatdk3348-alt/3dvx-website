@@ -679,3 +679,8 @@ footer {
 .material-matrix tbody tr:hover {
   background-color: #f8f9fa;
 }
+
+/* Sabit Header'ın sayfa içeriğini kapatmasını engellemek için üst boşluk */
+.page-top-spacing {
+  padding-top: 110px; /* Eğer boşluk az veya çok gelirse bu değeri 90px veya 130px olarak değiştirebilirsiniz */
+}
