@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3DVX - Profesyonel 3D Baskı Çözümleri</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- 1. En Üst Mini Header (İletişim & Sosyal Medya) -->
+  <div class="top-header">
+    <div class="page-container top-header-content">
+      <div class="top-left">
+        <span class="top-brand">3DVX</span>
+        <span class="top-divider">|</span>
+        <a href="tel:05074778467" class="top-info"><i class="fa-solid fa-phone"></i> 0507 477 8467</a>
+        <span class="top-divider">|</span>
+        <a href="mailto:info@3dvx.net" class="top-info"><i class="fa-solid fa-envelope"></i> info@3dvx.net</a>
+      </div>
+      <div class="top-socials">
+        <a href="#" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Ana Navbar -->
+  <nav class="navbar">
+    <div class="page-container navbar-content">
+      <div class="brand">
+        <img src="./logo.png" alt="3DVX Logo" class="brand-logo" />
+        <span class="brand-subtext">A <a href="https://www.hearvisionx.com" target="_blank" class="hvx-link">HearVisionX</a> Company</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#hero">Ana Sayfa</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        
+        <!-- Açılır Menü (Dropdown) -->
+        <li class="dropdown">
+          <!-- href="#" yaparak tıklanınca sayfa değiştirmesini engelledik ve imleci default yaptık -->
+          <a href="#" class="dropbtn" style="cursor: default;">Kurumsal <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+          <div class="dropdown-content">
+            <a href="#">Firma Profili</a>
+            <a href="#">İş Başvuru Formu</a>
+            <a href="#">Özel Üretim Başvurusu</a>
+            <a href="#">Kalite Belgeleri</a>
+          </div>
+        </li>
+
+        <li><a href="siparis.html">Sipariş</a></li>
+        <li><a href="index.html#contact">İletişim</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 3. Karşılama Alanı (Hero) - Dönen Kartlar -->
+  <header id="hero" class="hero-section">
+    <div class="page-container">
+      <div class="cards-container">
+        
+        <!-- Kart 1: Savunma -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1508614999368-9260051292e5?q=80&w=600&auto=format&fit=crop');">
+              <h2>SAVUNMA</h2>
+            </div>
+            <div class="flip-card-back">
+              <h3>Savunma</h3>
+              <p>Taktiksel saha donanımları, aktif gürültü önleyici işitme koruma sistemleri ve zorlu şartlara dayanıklı özel üretim komponentler.</p>
+              <a href="#calculator-section" class="card-btn">Üretime Başla</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kart 2: Havacılık -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=600&auto=format&fit=crop');">
+              <h2>HAVACILIK</h2>
+            </div>
+            <div class="flip-card-back">
+              <h3>Havacılık</h3>
+              <p>Uçuş emniyeti standartlarına uygun, kokpit içi iletişim modülleri ve ergonomik havacılık bileşenleri üretimi.</p>
+              <a href="#calculator-section" class="card-btn">Üretime Başla</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kart 3: Endüstriyel -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&auto=format&fit=crop');">
+              <h2>ENDÜSTRİYEL</h2>
+            </div>
+            <div class="flip-card-back">
+              <h3>Endüstriyel</h3>
+              <p>Sadece işe yarar, mekanik dayanımı yüksek, günlük iş akışınızı kolaylaştıran fonksiyonel mühendislik ürünleri.</p>
+              <a href="#calculator-section" class="card-btn">Üretime Başla</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kart 4: SHOP -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?q=80&w=600&auto=format&fit=crop');">
+              <h2>SHOP</h2>
+            </div>
+            <div class="flip-card-back">
+              <h3>Mağaza</h3>
+              <p>Kendi bünyemizde tasarladığımız inovatif ürünleri, hazır 3D tasarımları ve prototipleri hemen sipariş edin.</p>
+              <a href="#" class="card-btn">Mağazaya Git</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+ 
+  <!-- 5. Gelişmiş Alt Bilgi (Footer) -->
+  <footer id="contact">
+    <div class="page-container">
+      <div class="footer-grid">
+        
+        <!-- 1. Sütun: Marka ve Sosyal Medya -->
+        <div class="footer-col">
+          <img src="./logo.png" alt="3DVX Logo" style="height: 50px; margin-bottom: 15px;" />
+          <p style="font-size: 0.9rem; margin-bottom: 20px; line-height: 1.6;">Havacılık ve savunma standartlarında, fonksiyonel mühendislik çözümleri ve profesyonel 3D üretim hizmetleri.</p>
+          <div class="footer-socials">
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- 2. Sütun: Hızlı Bağlantılar -->
+        <div class="footer-col">
+          <h3>Hızlı Menü</h3>
+          <ul>
+            <li><a href="index.html#hero">Ana Sayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="index.html#calculator-section">Fiyat Hesapla</a></li>
+            <li><a href="#">Mağaza (Shop)</a></li>
+          </ul>
+        </div>
+
+        <!-- 3. Sütun: Kurumsal ve Yasal -->
+        <div class="footer-col">
+          <h3>Kurumsal</h3>
+          <ul>
+            <li><a href="#">Firma Profili</a></li>
+            <li><a href="#">Kalite Belgeleri</a></li>
+            <li><a href="#">KVKK Aydınlatma Metni</a></li>
+            <li><a href="#">Gizlilik ve Çerez Politikası</a></li>
+          </ul>
+        </div>
+
+        <!-- 4. Sütun: İletişim -->
+        <div class="footer-col">
+          <h3>İletişim</h3>
+          <ul class="contact-info">
+            <li><i class="fa-solid fa-location-dot"></i> Antalya, Türkiye</li>
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:05074778467">0507 477 8467</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@3dvx.net">info@3dvx.net</a></li>
+          </ul>
+        </div>
+
+      </div>
+      
+      <!-- Alt Telif Hakkı (Copyright) Çizgisi -->
+      <div class="footer-bottom">
+        <p>© 2026 3DVX - A HearVisionX Company. Tüm Hakları Saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

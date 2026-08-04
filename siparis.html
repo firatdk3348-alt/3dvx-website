@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sipariş ve Teklif | 3DVX</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- Mini Header -->
+  <div class="top-header">
+    <div class="page-container top-header-content">
+      <div class="top-left">
+        <span class="top-brand">3DVX</span>
+        <span class="top-divider">|</span>
+        <a href="tel:05074778467" class="top-info"><i class="fa-solid fa-phone"></i> 0507 477 8467</a>
+        <span class="top-divider">|</span>
+        <a href="mailto:info@3dvx.net" class="top-info"><i class="fa-solid fa-envelope"></i> info@3dvx.net</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ana Navbar -->
+  <nav class="navbar">
+    <div class="page-container navbar-content">
+      <div class="brand">
+        <img src="./logo.png" alt="3DVX Logo" class="brand-logo" />
+        <span class="brand-subtext">A <a href="https://www.hearvisionx.com" target="_blank" class="hvx-link">HearVisionX</a> Company</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#hero">Ana Sayfa</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        
+        <li class="dropdown">
+          <a href="#" class="dropbtn" style="cursor: default;">Kurumsal <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+          <div class="dropdown-content">
+            <a href="#">Firma Profili</a>
+            <a href="#">İş Başvuru Formu</a>
+            <a href="#">Özel Üretim Başvurusu</a>
+            <a href="#">Kalite Belgeleri</a>
+          </div>
+        </li>
+
+        <li><a href="siparis.html" style="color: #4f46e5;">Sipariş</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sipariş ve Teklif Modülü -->
+  <section id="calculator-section" style="padding-top: 150px;">
+    <div class="page-container">
+      <div class="section-title">
+        <h2>Endüstriyel Üretim ve Teklif Modülü</h2>
+        <p>Projenize ait 3D modeli yükleyerek üretim süreci ve anlık teklif durumunu inceleyebilirsiniz.</p>
+      </div>
+
+      <!-- YENİ: Filament Teknik Özellik Matrisi -->
+      <div class="material-matrix-container">
+        <h3>Mühendislik Malzemeleri Karşılaştırma Matrisi</h3>
+        <div class="table-responsive">
+          <table class="material-matrix">
+            <thead>
+              <tr>
+                <th>Malzeme Sınıfı</th>
+                <th>Öne Çıkan Özellik</th>
+                <th>Sıcaklık Dayanımı (HDT)</th>
+                <th>Darbe / Mukavemet</th>
+                <th>İdeal Kullanım Alanı</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>PLA</strong> (Porima)<br><small>Beyaz, Magenta, Panzer, Atak</small></td>
+                <td>Hızlı ve Yüksek Detaylı Baskı</td>
+                <td>~55°C (Düşük)</td>
+                <td>Orta</td>
+                <td>Görsel prototipler, kalıp testleri.</td>
+              </tr>
+              <tr>
+                <td><strong>PETG HT</strong> (Fiberon)</td>
+                <td>Termal ve Kimyasal Direnç</td>
+                <td>~90°C</td>
+                <td>Çok Yüksek</td>
+                <td>Dış mekan donanımları, sıvı muhafazaları.</td>
+              </tr>
+              <tr>
+                <td><strong><i class="fa-solid fa-leaf" style="color: #10b981; margin-right: 6px;" title="Geri Dönüştürülmüş Karbon"></i>PETG-rCF08</strong> (Fiberon)</td>
+                <td>Mat Yüzey ve Artırılmış Rijitlik</td>
+                <td>~85°C</td>
+                <td>Yüksek</td>
+                <td>Montaj aparatları, fikstürler.</td>
+              </tr>
+              <tr>
+                <td><strong><i class="fa-solid fa-sun" style="color: #f59e0b; margin-right: 6px;" title="UV Direnci"></i>ASA-CF08</strong> (Fiberon)</td>
+                <td>Mükemmel UV Direnci ve Dış Mekan</td>
+                <td>~100°C</td>
+                <td>Yüksek</td>
+                <td>Dış mekan muhafazaları, anten kutuları.</td>
+              </tr>
+              <tr>
+                <td><strong><i class="fa-solid fa-bolt" style="color: #eab308; margin-right: 6px;" title="Antistatik"></i>PETG-ESD</strong> (Fiberon)</td>
+                <td>Elektrostatik Deşarj Koruması</td>
+                <td>~80°C</td>
+                <td>Orta-Yüksek</td>
+                <td>Elektronik devre kutulamaları (ör. ESP32 muhafazaları), akustik üniteler.</td>
+              </tr>
+              <tr>
+                <td><strong><i class="fa-solid fa-shield-halved" style="color: #64748b; margin-right: 6px;" title="Cam Elyaf"></i>PET-GF15</strong> (Fiberon)</td>
+                <td>Yüksek Boyutsal Kararlılık</td>
+                <td>~110°C</td>
+                <td>Çok Yüksek</td>
+                <td>Dişliler, mekanik yük taşıyan izolasyon parçaları.</td>
+              </tr>
+              <tr>
+                <td><strong><i class="fa-solid fa-gear" style="color: #4f46e5; margin-right: 6px;" title="Karbon Fiber"></i>PET-CF17</strong> (Fiberon)</td>
+                <td>Maksimum Mukavemet ve Hafiflik</td>
+                <td>~105°C+</td>
+                <td>Çok Yüksek</td>
+                <td>Havacılık içi modüller, mono konfigürasyonlu kulaklık gövdeleri, drone şasileri.</td>
+              </tr>
+              <tr>
+                <td><strong><i class="fa-solid fa-fire" style="color: #dc2626; margin-right: 6px;" title="Ultra Yüksek Isı Dayanımı"></i>PPS-GF20</strong> (Fiberon)</td>
+                <td>Ekstrem Isı ve Kimyasal Direnci</td>
+                <td>~200°C+</td>
+                <td>Ekstrem</td>
+                <td>Motor içi bileşenler, yüksek ısıya maruz kalan mekanik parçalar.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div id="app">
+        <div id="viewer-container">
+          <div id="upload-overlay">
+            <p>Lütfen bir <strong>.STL</strong> dosyası sürükleyin veya seçin</p>
+            <input type="file" id="file-input" accept=".stl" />
+          </div>
+          <div id="canvas-container"></div>
+        </div>
+
+        <div id="controls-panel">
+          <h3>Üretim Parametreleri</h3>
+          
+          <div class="info-box">
+            <p><strong>Model Hacmi:</strong> <span id="volume-val">0</span> cm³</p>
+            <p><strong>Boyutlar (X, Y, Z):</strong> <span id="dim-val">0 x 0 x 0</span> mm</p>
+          </div>
+
+          <div class="form-group">
+            <label for="material-select">Malzeme Türü:</label>
+            <select id="material-select">
+            <option value="PLA-BEYAZ">PLA - Beyaz (Porima)</option>
+            <option value="PLA-MAGENTA">PLA - Magenta (Porima)</option>
+            <option value="PLA-PANZER">PLA - Panzer Yeşili (Porima)</option>
+            <option value="PLA-ATAK">PLA - Atak Grisi (Porima)</option>
+            <option value="PETG-HT-SIYAH">PETG HT - Siyah (Fiberon)</option>
+            <option value="PETG-RCF08-SIYAH">PETG-rCF08 Karbon - Siyah (Fiberon)</option>
+            <option value="PET-CF17-SIYAH">PET-CF17 Karbon - Siyah (Fiberon)</option>
+            <option value="ASA-CF08-MAVI">ASA-CF08 Karbon - Mavi (Fiberon)</option>
+            <option value="PET-GF15-SIYAH">PET-GF15 Cam Elyaf - Siyah (Fiberon)</option>
+            <option value="PETG-ESD-SIYAH">PETG-ESD Antistatik - Siyah (Fiberon)</option>
+            <option value="PPS-GF20-GRI">PPS-GF20 Cam Elyaf - Gri (Fiberon)</option>
+          </select>
+          </div>
+
+          <div class="form-group">
+            <label for="infill-input">Doluluk Oranı (%): <span id="infill-val">20</span>%</label>
+            <input type="range" id="infill-input" min="10" max="100" value="20" step="5" />
+          </div>
+
+          <!-- YENİ: Profesyonel Teklif Kutusu -->
+          <div class="price-box">
+            <span>Sipariş Tutarı (KDV Hariç):</span>
+            <h3 id="total-price">0.00 TL</h3>
+          </div>
+
+          <div id="alert-box" style="display: none; padding: 15px; border-radius: 8px; font-weight: bold; text-align: center; font-size: 0.9rem;"></div>
+
+          <button id="order-btn" disabled>Siparişi Onayla ve Devam Et</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="page-container">
+      <div class="footer-bottom" style="border: none;">
+        <p>© 2026 3DVX - A HearVisionX Company. Tüm Hakları Saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
