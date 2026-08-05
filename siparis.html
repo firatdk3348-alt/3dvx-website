@@ -65,6 +65,89 @@
           <p>Projenize ait 3D modeli yükleyerek üretim süreci ve anlık teklif durumunu inceleyebilirsiniz.</p>
         </div>
 
+        <!-- YANLIŞLIKLA SİLİNEN FİLAMENT TABLOSU GERİ EKLENDİ -->
+        <div class="material-matrix-container">
+          <h3>Mühendislik Malzemeleri Karşılaştırma Matrisi</h3>
+          <div class="table-responsive">
+            <table class="material-matrix">
+              <thead>
+                <tr>
+                  <th>Malzeme Sınıfı</th>
+                  <th>Öne Çıkan Özellik</th>
+                  <th>Sıcaklık Dayanımı (HDT)</th>
+                  <th>Darbe / Mukavemet</th>
+                  <th>İdeal Kullanım Alanı</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>PLA</strong> (Porima)<br><small>Beyaz, Magenta, Panzer, Atak</small></td>
+                  <td>Hızlı ve Yüksek Detaylı Baskı</td>
+                  <td>~55°C (Düşük)</td>
+                  <td>Orta</td>
+                  <td>Görsel prototipler, kalıp testleri.</td>
+                </tr>
+                <tr>
+                  <td><strong>PETG HT</strong> (Fiberon)</td>
+                  <td>Termal ve Kimyasal Direnç</td>
+                  <td>~90°C</td>
+                  <td>Çok Yüksek</td>
+                  <td>Dış mekan donanımları, sıvı muhafazaları.</td>
+                </tr>
+                <tr>
+                  <td><strong><i class="fa-solid fa-leaf" style="color: #10b981; margin-right: 6px;"
+                        title="Geri Dönüştürülmüş Karbon"></i>PETG-rCF08</strong> (Fiberon)</td>
+                  <td>Mat Yüzey ve Artırılmış Rijitlik</td>
+                  <td>~85°C</td>
+                  <td>Yüksek</td>
+                  <td>Montaj aparatları, fikstürler.</td>
+                </tr>
+                <tr>
+                  <td><strong><i class="fa-solid fa-sun" style="color: #f59e0b; margin-right: 6px;"
+                        title="UV Direnci"></i>ASA-CF08</strong> (Fiberon)</td>
+                  <td>Mükemmel UV Direnci ve Dış Mekan</td>
+                  <td>~100°C</td>
+                  <td>Yüksek</td>
+                  <td>Dış mekan muhafazaları, anten kutuları.</td>
+                </tr>
+                <tr>
+                  <td><strong><i class="fa-solid fa-bolt" style="color: #eab308; margin-right: 6px;"
+                        title="Antistatik"></i>PETG-ESD</strong> (Fiberon)</td>
+                  <td>Elektrostatik Deşarj Koruması</td>
+                  <td>~80°C</td>
+                  <td>Orta-Yüksek</td>
+                  <td>Elektronik devre kutulamaları (ör. ESP32 muhafazaları), akustik üniteler.</td>
+                </tr>
+                <tr>
+                  <td><strong><i class="fa-solid fa-shield-halved" style="color: #64748b; margin-right: 6px;"
+                        title="Cam Elyaf"></i>PET-GF15</strong> (Fiberon)</td>
+                  <td>Yüksek Boyutsal Kararlılık</td>
+                  <td>~110°C</td>
+                  <td>Çok Yüksek</td>
+                  <td>Dişliler, mekanik yük taşıyan izolasyon parçaları.</td>
+                </tr>
+                <tr>
+                  <td><strong><i class="fa-solid fa-gear" style="color: #4f46e5; margin-right: 6px;"
+                        title="Karbon Fiber"></i>PET-CF17</strong> (Fiberon)</td>
+                  <td>Maksimum Mukavemet ve Hafiflik</td>
+                  <td>~105°C+</td>
+                  <td>Çok Yüksek</td>
+                  <td>Havacılık içi modüller, mono konfigürasyonlu kulaklık gövdeleri, drone şasileri.</td>
+                </tr>
+                <tr>
+                  <td><strong><i class="fa-solid fa-fire" style="color: #dc2626; margin-right: 6px;"
+                        title="Ultra Yüksek Isı Dayanımı"></i>PPS-GF20</strong> (Fiberon)</td>
+                  <td>Ekstrem Isı ve Kimyasal Direnci</td>
+                  <td>~200°C+</td>
+                  <td>Ekstrem</td>
+                  <td>Motor içi bileşenler, yüksek ısıya maruz kalan mekanik parçalar.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- TABLO BİTİŞİ -->
+
         <div id="app">
           <div id="viewer-container">
             <button id="reset-view-btn" style="display: none;"><i class="fa-solid fa-rotate-right"></i> Yeni Dosya
@@ -91,7 +174,6 @@
               </select>
             </div>
 
-            <!-- YENİ: GÖRSEL RENK SEÇİM ALANI -->
             <div class="form-group">
               <label>Renk:</label>
               <div id="color-swatches-container" class="swatch-container">
@@ -132,7 +214,7 @@
           <h2>Siparişi Tamamla</h2>
           <p>Lütfen fatura ve teslimat bilgilerinizi eksiksiz doldurun.</p>
           <button id="back-to-calc-btn"
-            style="margin-top:15px; padding: 8px 15px; background: #e2e8f0; border:none; border-radius:6px; cursor:pointer; font-weight:bold; color: #333;"><i
+            style="margin-top:15px; padding: 8px 15px; background: #2a2a35; border:1px solid #444; border-radius:6px; cursor:pointer; font-weight:bold; color: #fff; transition: all 0.3s;"><i
               class="fa-solid fa-arrow-left"></i> Geri Dön</button>
         </div>
 
