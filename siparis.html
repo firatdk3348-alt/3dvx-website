@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
 
   <!-- Mini Header -->
@@ -27,14 +29,16 @@
     <div class="page-container navbar-content">
       <div class="brand">
         <img src="./logo.png" alt="3DVX Logo" class="brand-logo" />
-        <span class="brand-subtext">A <a href="https://www.hearvisionx.com" target="_blank" class="hvx-link">HearVisionX</a> Company</span>
+        <span class="brand-subtext">A <a href="https://www.hearvisionx.com" target="_blank"
+            class="hvx-link">HearVisionX</a> Company</span>
       </div>
       <ul class="nav-links">
         <li><a href="index.html#hero">Ana Sayfa</a></li>
         <li><a href="hakkimizda.html">Hakkımızda</a></li>
-        
+
         <li class="dropdown">
-          <a href="#" class="dropbtn" style="cursor: default;">Kurumsal <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+          <a href="#" class="dropbtn" style="cursor: default;">Kurumsal <i class="fa-solid fa-chevron-down"
+              style="font-size: 0.7rem; margin-left: 4px;"></i></a>
           <div class="dropdown-content">
             <a href="#">Firma Profili</a>
             <a href="#">İş Başvuru Formu</a>
@@ -44,150 +48,214 @@
         </li>
 
         <li><a href="siparis.html" style="color: #4f46e5;">Sipariş</a></li>
-        <li><a href="#contact">İletişim</a></li>
+        <li><a href="index.html#contact">İletişim</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Sipariş ve Teklif Modülü -->
-  <section id="calculator-section" style="padding-top: 150px;">
+  <section style="padding-top: 150px;">
     <div class="page-container">
-      <div class="section-title">
-        <h2>Endüstriyel Üretim ve Teklif Modülü</h2>
-        <p>Projenize ait 3D modeli yükleyerek üretim süreci ve anlık teklif durumunu inceleyebilirsiniz.</p>
-      </div>
 
-      <!-- YENİ: Filament Teknik Özellik Matrisi -->
-      <div class="material-matrix-container">
-        <h3>Mühendislik Malzemeleri Karşılaştırma Matrisi</h3>
-        <div class="table-responsive">
-          <table class="material-matrix">
-            <thead>
-              <tr>
-                <th>Malzeme Sınıfı</th>
-                <th>Öne Çıkan Özellik</th>
-                <th>Sıcaklık Dayanımı (HDT)</th>
-                <th>Darbe / Mukavemet</th>
-                <th>İdeal Kullanım Alanı</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>PLA</strong> (Porima)<br><small>Beyaz, Magenta, Panzer, Atak</small></td>
-                <td>Hızlı ve Yüksek Detaylı Baskı</td>
-                <td>~55°C (Düşük)</td>
-                <td>Orta</td>
-                <td>Görsel prototipler, kalıp testleri.</td>
-              </tr>
-              <tr>
-                <td><strong>PETG HT</strong> (Fiberon)</td>
-                <td>Termal ve Kimyasal Direnç</td>
-                <td>~90°C</td>
-                <td>Çok Yüksek</td>
-                <td>Dış mekan donanımları, sıvı muhafazaları.</td>
-              </tr>
-              <tr>
-                <td><strong><i class="fa-solid fa-leaf" style="color: #10b981; margin-right: 6px;" title="Geri Dönüştürülmüş Karbon"></i>PETG-rCF08</strong> (Fiberon)</td>
-                <td>Mat Yüzey ve Artırılmış Rijitlik</td>
-                <td>~85°C</td>
-                <td>Yüksek</td>
-                <td>Montaj aparatları, fikstürler.</td>
-              </tr>
-              <tr>
-                <td><strong><i class="fa-solid fa-sun" style="color: #f59e0b; margin-right: 6px;" title="UV Direnci"></i>ASA-CF08</strong> (Fiberon)</td>
-                <td>Mükemmel UV Direnci ve Dış Mekan</td>
-                <td>~100°C</td>
-                <td>Yüksek</td>
-                <td>Dış mekan muhafazaları, anten kutuları.</td>
-              </tr>
-              <tr>
-                <td><strong><i class="fa-solid fa-bolt" style="color: #eab308; margin-right: 6px;" title="Antistatik"></i>PETG-ESD</strong> (Fiberon)</td>
-                <td>Elektrostatik Deşarj Koruması</td>
-                <td>~80°C</td>
-                <td>Orta-Yüksek</td>
-                <td>Elektronik devre kutulamaları (ör. ESP32 muhafazaları), akustik üniteler.</td>
-              </tr>
-              <tr>
-                <td><strong><i class="fa-solid fa-shield-halved" style="color: #64748b; margin-right: 6px;" title="Cam Elyaf"></i>PET-GF15</strong> (Fiberon)</td>
-                <td>Yüksek Boyutsal Kararlılık</td>
-                <td>~110°C</td>
-                <td>Çok Yüksek</td>
-                <td>Dişliler, mekanik yük taşıyan izolasyon parçaları.</td>
-              </tr>
-              <tr>
-                <td><strong><i class="fa-solid fa-gear" style="color: #4f46e5; margin-right: 6px;" title="Karbon Fiber"></i>PET-CF17</strong> (Fiberon)</td>
-                <td>Maksimum Mukavemet ve Hafiflik</td>
-                <td>~105°C+</td>
-                <td>Çok Yüksek</td>
-                <td>Havacılık içi modüller, mono konfigürasyonlu kulaklık gövdeleri, drone şasileri.</td>
-              </tr>
-              <tr>
-                <td><strong><i class="fa-solid fa-fire" style="color: #dc2626; margin-right: 6px;" title="Ultra Yüksek Isı Dayanımı"></i>PPS-GF20</strong> (Fiberon)</td>
-                <td>Ekstrem Isı ve Kimyasal Direnci</td>
-                <td>~200°C+</td>
-                <td>Ekstrem</td>
-                <td>Motor içi bileşenler, yüksek ısıya maruz kalan mekanik parçalar.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      
-      <div id="app">
-        <div id="viewer-container">
-          <div id="upload-overlay">
-            <p>Lütfen bir <strong>.STL</strong> dosyası sürükleyin veya seçin</p>
-            <input type="file" id="file-input" accept=".stl" />
-          </div>
-          <div id="canvas-container"></div>
+      <!-- ==============================================
+           BÖLÜM 1: 3D HESAPLAMA EKRANI
+      =============================================== -->
+      <div id="calculator-view">
+        <div class="section-title">
+          <h2>Endüstriyel Üretim ve Teklif Modülü</h2>
+          <p>Projenize ait 3D modeli yükleyerek üretim süreci ve anlık teklif durumunu inceleyebilirsiniz.</p>
         </div>
 
-        <div id="controls-panel">
-          <h3>Üretim Parametreleri</h3>
-          
-          <div class="info-box">
-            <p><strong>Model Hacmi:</strong> <span id="volume-val">0</span> cm³</p>
-            <p><strong>Boyutlar (X, Y, Z):</strong> <span id="dim-val">0 x 0 x 0</span> mm</p>
+        <div id="app">
+          <div id="viewer-container">
+            <button id="reset-view-btn" style="display: none;"><i class="fa-solid fa-rotate-right"></i> Yeni Dosya
+              Yükle</button>
+            <div id="upload-overlay">
+              <p>Lütfen bir <strong>.STL</strong> dosyası sürükleyin veya seçin</p>
+              <input type="file" id="file-input" accept=".stl" name="STL_Dosyasi" />
+            </div>
+            <div id="canvas-container"></div>
           </div>
 
-          <div class="form-group">
-            <label for="material-select">Malzeme Türü:</label>
-            <select id="material-select">
-            <option value="PLA-BEYAZ">PLA - Beyaz (Porima)</option>
-            <option value="PLA-MAGENTA">PLA - Magenta (Porima)</option>
-            <option value="PLA-PANZER">PLA - Panzer Yeşili (Porima)</option>
-            <option value="PLA-ATAK">PLA - Atak Grisi (Porima)</option>
-            <option value="PETG-HT-SIYAH">PETG HT - Siyah (Fiberon)</option>
-            <option value="PETG-RCF08-SIYAH">PETG-rCF08 Karbon - Siyah (Fiberon)</option>
-            <option value="PET-CF17-SIYAH">PET-CF17 Karbon - Siyah (Fiberon)</option>
-            <option value="ASA-CF08-MAVI">ASA-CF08 Karbon - Mavi (Fiberon)</option>
-            <option value="PET-GF15-SIYAH">PET-GF15 Cam Elyaf - Siyah (Fiberon)</option>
-            <option value="PETG-ESD-SIYAH">PETG-ESD Antistatik - Siyah (Fiberon)</option>
-            <option value="PPS-GF20-GRI">PPS-GF20 Cam Elyaf - Gri (Fiberon)</option>
-          </select>
+          <div id="controls-panel">
+            <h3>Üretim Parametreleri</h3>
+
+            <div class="info-box">
+              <p><strong>Model Hacmi:</strong> <span id="volume-val">0</span> cm³</p>
+              <p><strong>Boyutlar (X, Y, Z):</strong> <span id="dim-val">0 x 0 x 0</span> mm</p>
+            </div>
+
+            <div class="form-group">
+              <label for="material-select">Malzeme Türü:</label>
+              <select id="material-select">
+                <option value="">Yükleniyor...</option>
+              </select>
+            </div>
+
+            <!-- YENİ: GÖRSEL RENK SEÇİM ALANI -->
+            <div class="form-group">
+              <label>Renk:</label>
+              <div id="color-swatches-container" class="swatch-container">
+                <!-- JS ile görsel kutucuklar buraya eklenecek -->
+              </div>
+              <p id="selected-color-text" class="swatch-text">Önce Malzeme Seçin</p>
+            </div>
+
+            <div class="form-group">
+              <label for="infill-input">Doluluk Oranı (%): <span id="infill-val">20</span>%</label>
+              <input type="range" id="infill-input" min="10" max="100" value="20" step="5" />
+            </div>
+
+            <div class="form-group">
+              <label for="quantity-input">Adet:</label>
+              <input type="number" id="quantity-input" min="1" max="1000" value="1" />
+            </div>
+
+            <div class="price-box">
+              <span>Sipariş Tutarı (KDV Hariç):</span>
+              <h3 id="total-price">0.00 TL</h3>
+            </div>
+
+            <div id="alert-box"
+              style="display: none; padding: 15px; border-radius: 8px; font-weight: bold; text-align: center; font-size: 0.9rem;">
+            </div>
+
+            <button id="order-btn" disabled>Siparişi Onayla ve Devam Et</button>
           </div>
-
-          <div class="form-group">
-            <label for="infill-input">Doluluk Oranı (%): <span id="infill-val">20</span>%</label>
-            <input type="range" id="infill-input" min="10" max="100" value="20" step="5" />
-          </div>
-
-          <!-- YENİ: Profesyonel Teklif Kutusu -->
-          <div class="price-box">
-            <span>Sipariş Tutarı (KDV Hariç):</span>
-            <h3 id="total-price">0.00 TL</h3>
-          </div>
-
-          <div id="alert-box" style="display: none; padding: 15px; border-radius: 8px; font-weight: bold; text-align: center; font-size: 0.9rem;"></div>
-
-          <button id="order-btn" disabled>Siparişi Onayla ve Devam Et</button>
         </div>
       </div>
+
+      <!-- ==============================================
+           BÖLÜM 2: MÜŞTERİ BİLGİ FORMU (Başlangıçta Gizli)
+      =============================================== -->
+      <div id="checkout-view" style="display: none;">
+        <div class="section-title">
+          <h2>Siparişi Tamamla</h2>
+          <p>Lütfen fatura ve teslimat bilgilerinizi eksiksiz doldurun.</p>
+          <button id="back-to-calc-btn"
+            style="margin-top:15px; padding: 8px 15px; background: #e2e8f0; border:none; border-radius:6px; cursor:pointer; font-weight:bold; color: #333;"><i
+              class="fa-solid fa-arrow-left"></i> Geri Dön</button>
+        </div>
+
+        <div class="checkout-grid">
+          <div class="checkout-form-section">
+            <div class="type-selector">
+              <label class="radio-label">
+                <input type="radio" name="Müşteri Tipi" value="Bireysel" checked> Bireysel Müşteri
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="Müşteri Tipi" value="Kurumsal"> Kurumsal Müşteri
+              </label>
+            </div>
+
+            <form id="checkout-form">
+              <h3 class="form-section-title">İletişim Bilgileri</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>E-Posta Adresi *</label>
+                  <input type="email" name="Email" required placeholder="ornek@mail.com" />
+                </div>
+                <div class="form-group">
+                  <label>Telefon Numarası *</label>
+                  <input type="tel" name="Telefon" required placeholder="05XX XXX XX XX" />
+                </div>
+              </div>
+
+              <h3 class="form-section-title">Fatura Bilgileri</h3>
+
+              <div id="bireysel-fields">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Ad *</label>
+                    <input type="text" name="Bireysel_Ad" id="b-ad" />
+                  </div>
+                  <div class="form-group">
+                    <label>Soyad *</label>
+                    <input type="text" name="Bireysel_Soyad" id="b-soyad" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>TC Kimlik No</label>
+                  <input type="text" name="TCKN" placeholder="İsteğe Bağlı" />
+                </div>
+              </div>
+
+              <div id="kurumsal-fields" class="hidden-section">
+                <div class="form-group">
+                  <label>Firma Tam Ünvanı *</label>
+                  <input type="text" name="Firma_Ünvanı" id="k-isim" />
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Vergi Dairesi *</label>
+                    <input type="text" name="Vergi_Dairesi" id="k-vd" />
+                  </div>
+                  <div class="form-group">
+                    <label>Vergi No (VKN) *</label>
+                    <input type="text" name="VKN" id="k-vkn" />
+                  </div>
+                </div>
+                <h4 style="margin: 15px 0 10px 0; color: #4f46e5;">Yetkili Kişi Bilgileri</h4>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Yetkili Ad *</label>
+                    <input type="text" name="Yetkili_Ad" id="y-ad" />
+                  </div>
+                  <div class="form-group">
+                    <label>Yetkili Soyad *</label>
+                    <input type="text" name="Yetkili_Soyad" id="y-soyad" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Fatura Açık Adresi *</label>
+                <textarea rows="3" name="Fatura_Adresi" required
+                  placeholder="Mahalle, Cadde, Sokak, No, İlçe/İl"></textarea>
+              </div>
+
+              <div class="shipping-checkbox-container">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="Fatura_Ve_Teslimat_Ayni" id="same-address-cb" checked value="Evet">
+                  Fatura adresi ile teslimat adresi aynıdır.
+                </label>
+              </div>
+
+              <div id="shipping-fields" class="hidden-section">
+                <h3 class="form-section-title">Teslimat Adresi</h3>
+                <div class="form-group">
+                  <label>Alıcı Ad Soyad / Firma Ünvanı *</label>
+                  <input type="text" name="Teslimat_Alicisi" id="t-alici" />
+                </div>
+                <div class="form-group">
+                  <label>Teslimat Açık Adresi *</label>
+                  <textarea rows="3" name="Teslimat_Adresi" id="t-adres"></textarea>
+                </div>
+              </div>
+
+              <button type="submit" id="complete-order-btn">Talebi Oluştur ve Gönder</button>
+            </form>
+          </div>
+
+          <div class="checkout-summary-section">
+            <h3>Sipariş Özeti</h3>
+            <div class="summary-item"><span>Malzeme:</span><strong id="summary-material">-</strong></div>
+            <div class="summary-item"><span>Doluluk (Infill):</span><strong id="summary-infill">-</strong></div>
+            <div class="summary-item"><span>Hacim:</span><strong id="summary-volume">-</strong></div>
+            <div class="summary-item"><span>Adet:</span><strong id="summary-quantity">-</strong></div>
+            <div class="summary-total">
+              <span>Toplam Tutar (KDV Hariç)</span>
+              <h2 id="summary-price">0.00 TL</h2>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- Footer -->
-  <footer id="contact">
+  <footer id="contact" style="margin-top: 50px;">
     <div class="page-container">
       <div class="footer-bottom" style="border: none;">
         <p>© 2026 3DVX - A HearVisionX Company. Tüm Hakları Saklıdır.</p>
@@ -197,4 +265,5 @@
 
   <script type="module" src="/main.js"></script>
 </body>
+
 </html>
