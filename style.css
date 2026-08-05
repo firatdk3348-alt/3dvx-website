@@ -15,7 +15,7 @@ body {
 }
 
 .page-container {
-  max-width: 1140px; 
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
@@ -92,13 +92,13 @@ body {
 ========================================= */
 .navbar {
   position: fixed;
-  top: 35px; 
+  top: 35px;
   width: 100%;
   background: rgba(26, 26, 36, 0.95);
   backdrop-filter: blur(10px);
   padding: 12px 0;
   z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-content {
@@ -171,14 +171,13 @@ body {
   display: inline-block;
 }
 
-/* GİZLİ KÖPRÜ: Fare menüden kutuya inerken bağlantıyı koparmaması için eklendi */
 .dropdown::after {
   content: "";
   position: absolute;
   top: 100%;
   left: -10px;
   right: -10px;
-  height: 25px; 
+  height: 25px;
 }
 
 .dropbtn {
@@ -190,10 +189,10 @@ body {
   display: none;
   position: absolute;
   background-color: #ffffff;
-  min-width: 240px; 
-  box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+  min-width: 240px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
-  top: calc(100% + 20px); /* Kutu artık metinden tam 20px aşağıda güvenle açılacak */
+  top: calc(100% + 20px);
   left: 0;
   overflow: hidden;
   z-index: 1000;
@@ -201,7 +200,7 @@ body {
 }
 
 .dropdown-content a {
-  color: #333 !important; 
+  color: #333 !important;
   padding: 14px 20px;
   text-decoration: none;
   display: block;
@@ -218,7 +217,7 @@ body {
 .dropdown-content a:hover {
   background-color: #f8f9fa;
   color: #4f46e5 !important;
-  padding-left: 26px; 
+  padding-left: 26px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -227,8 +226,15 @@ body {
 }
 
 @keyframes dropdownFadeIn {
-  from { opacity: 0; transform: translateY(-15px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* =========================================
@@ -265,14 +271,15 @@ body {
   transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
   transform-style: preserve-3d;
   border-radius: 12px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -298,7 +305,7 @@ body {
   font-size: 1.8rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 
 .flip-card-back {
@@ -310,7 +317,7 @@ body {
 .flip-card-back h3 {
   font-size: 1.6rem;
   margin-bottom: 12px;
-  border-bottom: 2px solid rgba(255,255,255,0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 8px;
 }
 
@@ -334,7 +341,7 @@ body {
 
 .card-btn:hover {
   background: #f4f6f9;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
 }
 
@@ -366,7 +373,7 @@ body {
   height: 650px;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   background: white;
 }
 
@@ -390,7 +397,7 @@ body {
   padding: 30px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
 
@@ -439,7 +446,10 @@ body {
   font-size: 0.85rem;
 }
 
-.form-group select, .form-group input[type="range"] {
+/* YENİ: input[type="number"] kısmı eklendi */
+.form-group select,
+.form-group input[type="range"],
+.form-group input[type="number"] {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -518,7 +528,6 @@ footer {
   padding-bottom: 10px;
 }
 
-/* Başlıkların altına şık bir marka rengi çizgisi */
 .footer-col h3::after {
   content: "";
   position: absolute;
@@ -536,17 +545,17 @@ footer {
   gap: 12px;
 }
 
-.footer-col ul li a, .contact-info li {
+.footer-col ul li a,
+.contact-info li {
   color: #aaa;
   text-decoration: none;
   font-size: 0.95rem;
   transition: color 0.3s, padding-left 0.3s;
 }
 
-/* Linklerin üzerine gelince hafif sağa kayma ve renk değişimi efekti */
 .footer-col ul li a:hover {
   color: #4f46e5;
-  padding-left: 5px; 
+  padding-left: 5px;
 }
 
 .contact-info li {
@@ -562,10 +571,9 @@ footer {
 
 .contact-info li a:hover {
   color: #fff;
-  padding-left: 0; /* İletişim linkleri sağa kaymasın, sadece parlasın */
+  padding-left: 0;
 }
 
-/* Sosyal Medya İkonları */
 .footer-socials {
   display: flex;
   gap: 15px;
@@ -590,7 +598,6 @@ footer {
   transform: translateY(-3px);
 }
 
-/* En Alt Telif Hakkı (Copyright) */
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 20px;
@@ -607,19 +614,22 @@ footer {
     flex-direction: column;
     height: auto;
   }
+
   .flip-card {
     height: 280px;
   }
+
   #app {
     flex-direction: column;
     height: auto;
   }
+
   #viewer-container {
     height: 400px;
   }
-  /* Footer sütunlarının mobilde alt alta geçmesi için boşlukları düzenler */
+
   .footer-grid {
-    gap: 30px; 
+    gap: 30px;
   }
 }
 
@@ -627,12 +637,12 @@ footer {
    MALZEME MATRİSİ (TEKNİK TABLO) STİLLERİ
 ========================================= */
 .material-matrix-container {
-  background: #e2e8f0; /* Sayfa zemininden net olarak ayrışan tok gri */
+  background: #e2e8f0;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: inset 0 2px 6px rgba(0,0,0,0.04), 0 10px 30px rgba(0,0,0,0.05);
-  margin-bottom: 40px; 
-  border: 1px solid #cbd5e1; /* Kenarlık da belirginleştirildi */
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.04), 0 10px 30px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+  border: 1px solid #cbd5e1;
 }
 
 .material-matrix-container h3 {
@@ -645,7 +655,7 @@ footer {
 
 .table-responsive {
   width: 100%;
-  overflow-x: auto; /* Mobilde tablonun sağa sola kaydırılabilmesini sağlar */
+  overflow-x: auto;
 }
 
 .material-matrix {
@@ -675,12 +685,325 @@ footer {
   font-size: 1.05rem;
 }
 
-/* Satırların üzerine gelince hafif belirginleşme */
 .material-matrix tbody tr:hover {
   background-color: #f8f9fa;
 }
 
-/* Sabit Header'ın sayfa içeriğini kapatmasını engellemek için üst boşluk */
 .page-top-spacing {
-  padding-top: 110px; /* Eğer boşluk az veya çok gelirse bu değeri 90px veya 130px olarak değiştirebilirsiniz */
+  padding-top: 110px;
+}
+
+/* YENİ DOSYA YÜKLE BUTONU STİLLERİ */
+#reset-view-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #1a1a24;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#reset-view-btn:hover {
+  background-color: #4f46e5;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   CHECKOUT (SİPARİŞ TAMAMLAMA) FORM STİLLERİ (DARK THEME)
+========================================= */
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* Sol form %66, Sağ özet %33 */
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.checkout-form-section {
+  background: #1a1a24;
+  /* Havacılık temasına uygun ana koyu zemin */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: #e2e8f0;
+}
+
+.checkout-summary-section {
+  background: #111118;
+  /* Sağ panel için daha derin bir siyah */
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  height: fit-content;
+  color: #e2e8f0;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Tip Seçici Radyo Butonlar */
+.type-selector {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.05rem;
+  color: #cbd5e1;
+  transition: color 0.3s;
+}
+
+.radio-label:hover {
+  color: #fff;
+}
+
+.radio-label input[type="radio"] {
+  accent-color: #4f46e5;
+  width: 18px;
+  height: 18px;
+}
+
+/* Form İçerik Alanları */
+.form-section-title {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 8px;
+}
+
+.form-section-title:first-of-type {
+  margin-top: 0;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group label {
+  color: #94a3b8;
+  /* Etiketler için profesyonel soluk gri */
+}
+
+/* Input Kutuları (Genel ve Textarea) */
+.checkout-form-section input[type="text"],
+.checkout-form-section input[type="email"],
+.checkout-form-section input[type="tel"],
+.checkout-form-section textarea {
+  width: 100%;
+  padding: 12px;
+  background: #0f0f13;
+  /* Girdi alanları için ekstra koyu zemin */
+  border: 1px solid #2a2a35;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.checkout-form-section textarea {
+  resize: vertical;
+}
+
+.checkout-form-section input:focus,
+.checkout-form-section textarea:focus {
+  border-color: #4f46e5;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+.checkout-form-section input::placeholder,
+.checkout-form-section textarea::placeholder {
+  color: #475569;
+}
+
+/* Checkbox (Aynı Adres Seçeneği) */
+.shipping-checkbox-container {
+  background: rgba(79, 70, 229, 0.1);
+  /* Marka renginin hafif şeffaf hali */
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  border-left: 4px solid #4f46e5;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #e0e7ff;
+}
+
+.checkbox-label input[type="checkbox"] {
+  accent-color: #4f46e5;
+  width: 18px;
+  height: 18px;
+}
+
+.hidden-section {
+  display: none !important;
+}
+
+/* Tamamla Butonu */
+#complete-order-btn {
+  background: #4f46e5;
+  /* 3DVX kurumsal rengi */
+  color: white;
+  border: none;
+  padding: 18px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
+}
+
+#complete-order-btn:hover {
+  background: #4338ca;
+  transform: translateY(-2px);
+}
+
+/* Sipariş Özeti Kutusu (Sağ Taraf) */
+.checkout-summary-section h3 {
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+  text-align: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 10px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+}
+
+.summary-item strong {
+  color: #ffffff;
+}
+
+.summary-total {
+  margin-top: 25px;
+  background: #1a1a24;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.summary-total span {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.summary-total h2 {
+  color: #10b981;
+  /* Fiyatı ön plana çıkarmak için parlak neon yeşil */
+  font-size: 2.2rem;
+  margin-top: 10px;
+  text-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+}
+
+/* Üst Taraftaki Geri Dön Butonu Koyu Tema Ayarı */
+#back-to-calc-btn {
+  background: #2a2a35 !important;
+  color: #ffffff !important;
+  border: 1px solid #444 !important;
+  transition: all 0.3s;
+}
+
+#back-to-calc-btn:hover {
+  background: #4f46e5 !important;
+  border-color: #4f46e5 !important;
+}
+
+/* Mobil Uyum (Checkout Sayfası İçin) */
+@media (max-width: 900px) {
+  .checkout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* =========================================
+   RENK KUTUCUKLARI (SWATCHES) STİLLERİ
+========================================= */
+.swatch-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.color-swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.color-swatch:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.color-swatch.active {
+  border: 3px solid #4f46e5;
+  box-shadow: 0 0 12px rgba(79, 70, 229, 0.6);
+  transform: scale(1.15);
+}
+
+.swatch-text {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.swatch-text strong {
+  color: #1e3a8a;
+  font-weight: 700;
 }
